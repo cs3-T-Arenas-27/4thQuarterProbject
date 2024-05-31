@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<head></head>
+
+<body>
+    <fieldset>
+        <legend>Sign-Up</legend>
+        <form id="userForm">
+            <label for="username" required>Username:</label></br>
+            <input type="text" id="username" name="username"></br></br>
+
+            <label for="password" required>Password:</label></br>
+            <input type="password" id="password" name="password"></br></br>
+
+            <label for="confirm" required>Confirm Password:</label></br>
+            <input type="password" id="confirm" name="confirm"></br></br>
+
+            <label for="email" required>Email:</label></br>
+            <input type="email" id="email" name="email"></br></br>
+
+            <button type="submit" onclick="submitForm()">Submit</button>
+            <button type="reset" onclick="resetForm()">Reset</button>
+            <button><a id="loginButton" href="login.html">Login</a></button>
+        </form>
+    </fieldset>
+</body>
+
+<script>
+function submitForm() {
+    var username = document.getElementById("username").value;
+    var password = document.getElementById("password").value;
+    var confirm = document.getElementById("confirm").value;
+    var email = document.getElementById("email").value;
+    
+    if (username === "" || password === "" || confirm === "" || email === "") {
+        alert("Some input fields are blank. Please fill out all fields.");
+    } 
+    
+    else if (password !== confirm) {
+        alert("Passwords do not match. Please make sure your passwords match.");
+    } 
+    
+    else {
+        localStorage.setItem("username", username);
+        localStorage.setItem("email", email);
+        localStorage.setItem("password", password);
+
+        alert("Your information is saved. The information you entered is saved in local storage.", 
+                function() {
+                window.location.href = "login.html";
+                }
+            );
+
+                setTimeout(function() {
+                    window.location.href = "login.html";
+                }, 0);
+            }
+            render();
+}
+function resetForm() {
+    document.getElementById("userForm").reset();
+}
+
+
+</script>
+
+<style>
+    #loginButton{
+        color:black;
+        text-decoration: none;
+        text-decoration-line: none;
+        font-family:Garamond,serif;
+        font-weight: bold;
+        color:#172239 ;
+    }
+
+    button{
+        font-family:Garamond,serif;
+        font-weight: bold;
+        color:#172239 ;
+    }
+
+    body {
+        background-image: url("bg.jpg");
+        background-repeat: none;
+        background-size: cover;
+        opacity: 1;
+        position: fixed;
+        font-family: Garamond, serif;
+        font-size: 25px;
+    }
+
+    legend {
+        text-align: center;
+        color: white;
+        font-family: Garamond, serif;
+        font-weight: bold;
+        font-size: 30px;
+        border-radius: 5px;
+        background-color: #3a5282;
+        padding-right: 20px;
+        padding-left:20px;
+    }
+
+    fieldset {
+        background-color: #3a5282;
+        border-radius: 10px;
+        padding: 15px;
+        border: 0;
+        margin-left: 378px;
+        width: 500px;
+        height: 400px;
+        text-align: center;
+        align-content: center;
+        margin-top: 50px;
+        border-color: aliceblue;
+    }
+
+    label {
+        font-size: 18px;
+        color: white;
+    }
+
+    input {
+        border-color: white;
+        border-width: 1px;
+        size: 20px;
+    }
+</style>
+
+
+</html>

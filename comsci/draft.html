@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<head></head>
+
+<body>
+    <nav>
+        <li><a href="signup.html" class="login">Login/Signup</a></li>
+        <li><a href="references.html" class="reference">References</a></li>
+        <li><a href="brainbasics.html" class="brain">Brain Basics</a></li>
+        <li><a href="about.html" class="about">About</a></li>
+        <li><a href="home.html" class="home">Home</a></li>
+        <li><a class="title">Cognitive Neuroscience</a></li>
+        <li><img src="logo.png" class="logo"></li>        
+
+    </nav>
+
+        <div class="image">
+                <img href="https://www.getbodysmart.com/the-brain/" src="brain.png" id="brainpic"> 
+        </div>
+
+        <div class="text1">
+            <p>Dive into the mind's wonders. Discover cognitive neuroscience.</p>
+        </div>
+
+        <div class="text2">
+            <p>Think of the brain as a central computer that controls all the body's functions.<br>
+            The rest of the nervous system is like a network that relays messages back and forth <br>
+            from the brain to different parts of the body. The functions of the brain is to regulate<br>
+            the majority of our body and mind purpose. This includes vital functions like breathing <br>
+            or heart rate, to basic functions like sleeping, eating, or sexual instinct, and even <br>
+            superior functions like thinking, remembering, reasoning, or talking. In order to carry-out<br>
+            any seemingly simple task, our brain has to perform thousands of processes to ensure that <br>
+            we properly complete the task. 
+            </p>
+        </div>
+        
+</body>
+
+<script>
+
+</script>
+
+<style>
+    body {
+        background-image: url("bg.jpg");
+        background-repeat: none;
+        background-size: cover;
+        opacity: 1;
+        position: fixed;
+        font-family: Garamond, serif;
+    }
+
+    .title{
+        margin-right:380px;
+        font-family: none;
+        font-size:30px;
+        margin-top:-10px;
+    }
+
+    .logo{
+        width:150px;
+        float: left;
+        margin-right:-25px;
+        margin-top:-13px;
+    }
+
+    .container {
+        width: 300px;
+    }
+
+    .image {
+        float: left;
+        width: 130px;
+        margin-left: -20px;
+        vertical-align: bottom;
+    }
+
+    .text1 {
+        float: right;
+        margin-top: 110px;
+        margin-left: 1px;
+        width: 800px;
+        font-family: Garamond, serif;
+        color: rgb(64, 68, 132);
+        font-weight: bolder;
+        font-size: 50px;
+        margin-right:485px;
+    }
+
+    .text2{
+        margin-top: 300px;
+        color:rgb(67, 60, 115);
+        font-size: 23px;
+        padding-bottom:0px;
+    }
+
+    #gallery{
+        margin-left:420px;
+        margin-top: -15px;
+        padding-top:5px;
+        padding-bottom:5px;
+        padding-left: 7px;
+        padding-right:7px;
+        color:#212e63;
+        font-size:23px;
+        font-family:Garamond, serif;
+        vertical-align: top;
+    }
+
+    nav {
+        overflow: hidden;
+        width: 100%;
+        position: fixed;
+        margin-left: -8px;
+        top: 0px;
+        height: 99px;
+        opacity: 0.9;
+        background: linear-gradient(to right, #212e63, #9092d6,#5194c6, #9092d6, #313678);
+        padding: 10px 0;
+        border-bottom: 1px solid white;
+    }
+
+    #brainpic {
+        width: 400px;
+        margin-top: 140px;
+        margin-left: 950px;
+        overflow:clip;
+    }
+
+    li {
+        display: inline;
+        float: right;
+        margin-top: 20px;
+        font-size: 15px;
+    }
+
+    li a {
+        margin-right: 40px;
+        padding-top: 20px;
+        color: white;
+        border: 1px;
+        float: right;
+        text-decoration: none;
+        font-family: Garamond, serif;
+        font-size: 20px;
+    }
+
+    .reference {
+        position: relative;
+    }
+
+    .reference:after {
+        content: '';
+        height: 2px;
+        width: 0;
+        position: absolute;
+        left: 0;
+        bottom: -5px;
+        background-color: white;
+        transition: 0.5s;
+    }
+
+    .reference:hover:after {
+        width: 100%;
+    }
+
+    .brain {
+        position: relative;
+    }
+
+    .brain:after {
+        content: '';
+        height: 2px;
+        width: 0;
+        position: absolute;
+        left: 0;
+        bottom: -5px;
+        background-color: white;
+        transition: 0.5s;
+    }
+
+    .brain:hover:after {
+        width: 100%;
+    }
+
+    .about {
+        position: relative;
+    }
+
+    .about:after {
+        content: '';
+        height: 2px;
+        width: 0;
+        position: absolute;
+        left: 0;
+        bottom: -5px;
+        background-color: white;
+        transition: 0.5s;
+    }
+
+    .about:hover:after {
+        width: 100%;
+    }
+
+    .home {
+        position: relative;
+    }
+
+    .home:after {
+        content: '';
+        height: 2px;
+        width: 0;
+        position: absolute;
+        left: 0;
+        bottom: -5px;
+        background-color: white;
+        transition: 0.5s;
+    }
+
+    .home:hover:after {
+        width: 97.5%;
+    }
+
+    .login {
+        position: relative;
+        margin-right:60px;
+    }
+
+    .login:after {
+        content: '';
+        height: 2px;
+        width: 0;
+        position: absolute;
+        left: 0;
+        bottom: -5px;
+        background-color: white;
+        transition: 0.5s;
+    }
+
+    .login:hover:after {
+        width: 100%;
+    }
+</style>
+
+
+</html>
